@@ -24,7 +24,6 @@ jobs:
         uses: aws-actions/configure-aws-credentials@v4.1.0
         with:
           role-to-assume: arn:aws:iam::651706752771:role/gh_role
-          aws-region: us-east-1
           aws-region: us-west-1
 
       - name: Setup Terraform
