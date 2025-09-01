@@ -4,10 +4,10 @@ on:
   push:
     branches:
       - main
-permissons:
-  contents: read
-  id-token: write
 
+permissons:
+  id-token: write
+  contents: read
 
 jobs:
   terraform:
