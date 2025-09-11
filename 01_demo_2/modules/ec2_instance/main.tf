@@ -62,7 +62,7 @@ locals {
     dnf -y update
     dnf -y install nginx
     systemctl enable nginx
-    echo "<h1>Terraform 101 on AWS — it works!</h1>" > /usr/share/nginx/html/index.html
+    echo "<h1>De la teoría a la práctica: Construyendo infraestructura en AWS con Terraform </h1>" > /usr/share/nginx/html/index.html
     systemctl start nginx
   EOT
 }

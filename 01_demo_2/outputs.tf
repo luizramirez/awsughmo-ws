@@ -5,10 +5,10 @@ output "s3_bucket_id" {
 
 output "ec2_public_ip" {
   description = "Public IP of EC2 instance"
-  value       = module.web.public_ip
+  value       = module.nginx.public_ip
 }
 
 output "ec2_instance_id" {
   description = "EC2 instance ID"
-  value       = module.web.instance_id
+  value       = module.nginx.instance_id
 }

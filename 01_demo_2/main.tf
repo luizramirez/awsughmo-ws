@@ -11,14 +11,6 @@ module "ec2-instance" {
   version = "6.1.1"
 }
 
-module "web" {
-  source             = "./modules/ec2_instance"
-  instance_type      = var.instance_type
-  vpc_id             = data.aws_vpc.default.id
-  public_subnet_id   = data.aws_subnet.default_public.id
-  allow_http_ingress = true
-  tags               = local.common_tags
-}
 module "nginx" {
   source             = "./modules/ec2_instance"
   instance_type      = var.instance_type
